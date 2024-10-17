@@ -1,0 +1,124 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding-right: 20px;
+    color: white;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 80px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+}
+.empty-space {
+    width: 100px;
+    height: auto;
+    margin: 0px;
+}
+
+#row-1 {
+    margin-bottom: -100px;
+}
+
+#row-3 {
+    margin-top: -7px;
+}
+
+#row-4 {
+    margin-bottom: -25px;
+}
+
+#row-5 {
+    margin-top: -124px;
+}
+
+#row-7 {
+    margin-top: -25px;
+}
+
+#row-8 {
+    margin-top: -148px;
+}
+
+#row-9 {
+    margin-top: -5px;
+}
+
+/* Nuevas reglas para organizar el layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sephirot-container {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+}
+
+.sephirot-container div {
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.boton-impresion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-arbol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+.sephirot-text {
+    padding: 0; /* Elimina el padding si no es necesario */
+    margin-bottom: 20px; /* Añade margen inferior para separar del contenido siguiente */
+    color: white; /* Asegúrate de que sea visible en el fondo negro */
+}
+.sephirot-text.fixed {
+    position: absolute; /* Fija el texto */
+    top: 20px; /* Ajusta según sea necesario */
+    left: 50%; /* Centra en horizontal */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    z-index: 1; /* Asegúrate de que esté en el frente */
+}
